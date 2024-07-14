@@ -96,7 +96,7 @@ const PromoUpload = () => {
             };
 
             try {
-                  const request = await fetch('http://localhost:8000/api/promo', requestOptions);
+                  const request = await fetch('https://coupon-tfk5.onrender.com/api/promo', requestOptions);
                   const response = await request.json();
                   console.log(response);
             }
