@@ -50,7 +50,7 @@ const PromoUpload = () => {
                   valid = labels.every((item, index) => (item === dataLabel[index]) ? true : false)
                   if (!valid) {
                         document.getElementById('coupon-loading-spinner').style.display = 'none'
-                        setFileUploadError("File Format Mismatch. Please Check again and upload")
+                        setFileUploadError("File format is not correct. Please Kindly check again and upload")
                         document.getElementById('coupon-upload-container').style.display = 'block'
                   }
             }
@@ -127,7 +127,7 @@ const PromoUpload = () => {
                   <div className="w-full flex justify-around items-center">
                         <div className="md:ml-20 px-5 flex items-center h-[75vh] flex-1">
                               <div className='w-full md:w-1/2 lg:w-1/3 p-3'>
-                                    <h2 className='text-left text-xl font-medium'>Promo Upload</h2>
+                                    <h2 className='text-left text-xl font-medium'>Upload Coupon & SMS Design Sheet</h2>
 
                                     <div id="coupon-upload-container" className='mt-5'>
                                           <FileUploader
