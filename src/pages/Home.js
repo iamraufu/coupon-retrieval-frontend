@@ -109,7 +109,7 @@ const Home = () => {
                                     <form onSubmit={handleSubmit(onSubmit)}>
                                           <div className="my-2">
                                                 <input
-                                                      disabled={isOtpSent ? true : false}
+                                                      disabled={(isOtpSent || isPromoSent)? true : false}
                                                       placeholder='Enter Phone Number' autoComplete={`phone-number`} className='disabled:bg-white w-full p-2 border-2 border-violet-600 focus:outline-violet-800 rounded' min='0' type='number' {...register("phone", { required: true, pattern: /^01[3-9]\d{8}$/, maxLength: 11 })} />
                                                 <br />
                                                 {errors.phone && <span className='text-rose-500'>*Invalid Phone Number</span>}
